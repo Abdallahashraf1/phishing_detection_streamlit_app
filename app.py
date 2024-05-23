@@ -11,7 +11,7 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 
 # Load models and scaler
-rf_model, nb_model, lr_model, xgb_model, ensemble_model, adaboost_model, svm_model, knn_model, nn_model, scaler = model_loader.load_models()
+rf_model, nb_model, lr_model, xgb_model, adaboost_model, knn_model, nn_model, scaler = model_loader.load_models()
 
 def calculate_features(domain):
     features = {}

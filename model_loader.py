@@ -16,14 +16,10 @@ def load_models():
     with open('models/xgboost_model.pkl', 'rb') as f:
         xgb_model = pickle.load(f)
 
-    with open('models/ensemble_model.pkl', 'rb') as f:
-        ensemble_model = pickle.load(f)
 
     with open('models/adaboost_model.pkl', 'rb') as f:
         adaboost_model = pickle.load(f)
 
-    with open('models/svm_model.pkl', 'rb') as f:
-        svm_model = pickle.load(f)
 
     with open('models/knn_model.pkl', 'rb') as f:
         knn_model = pickle.load(f)
@@ -35,6 +31,6 @@ def load_models():
     with open('models/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
 
-    return rf_model, nb_model, lr_model, xgb_model, ensemble_model, adaboost_model, svm_model, knn_model, nn_model, scaler
+    return rf_model, nb_model, lr_model, xgb_model, adaboost_model, knn_model, nn_model, scaler
 
 
